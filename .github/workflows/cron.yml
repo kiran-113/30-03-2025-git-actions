@@ -1,9 +1,9 @@
 name: Cron_job
 
-on:
-  schedule:
-    - cron: '* * * * *'  # Runs daily at midnight UTC
-  workflow_dispatch:  # Allows manual triggering from GitHub Actions UI
+# on:
+#   schedule:
+#     - cron: '* * * * *'  # Runs daily at midnight UTC
+#   workflow_dispatch:  # Allows manual triggering from GitHub Actions UI
 
 jobs:
   check_ssl:
