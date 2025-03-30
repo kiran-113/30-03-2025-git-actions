@@ -1,0 +1,29 @@
+name: Push_Terraform Lint
+
+on:
+  push:
+    branches:
+      - main
+# on:
+#   pull_request:
+#     branches:
+#       - main
+#   workflow_dispatch:
+#     inputs:
+#       branch_name:
+#         description: 'Branch name'
+#         required: true
+#         default: 'main'
+#   schedule:
+#     - cron: '0 0 * * *' # Every day at midnight UTC
+#   continuati
+
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
